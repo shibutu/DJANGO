@@ -11,4 +11,8 @@ class student(models.Model):
 
 
     def __str__(self):
-        return self.firstName
+        return self.firstName 
+class Person(models.Model):
+    name=models.CharField(max_length=50)
+    profile_pic=models.ImageField(upload_to='profile/',null=True,blank=True)
+    cv=models.FileField(blank=True,null=True,upload_to='document/')

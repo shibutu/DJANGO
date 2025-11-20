@@ -33,19 +33,17 @@
          <!--navigation-->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Register Student">Register Student</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Student Data">Student Data</a></li>
-                    <li><a href="#Sign Up">Sign Up</a></li>
-                    <li><a href="#Sign In">Sign In</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'registstd' %}">Register Student</a></li>
+                    <li><a href="{% url 'fetch_std' %}">Student Data</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'signin' %}">Sign In</a></li>
                 </ul>
 
             </nav>
         </div>    
     </header>
     {% block content %}
-
     {% endblock %}
 </body>
 </html>

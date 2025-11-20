@@ -11,6 +11,7 @@ urlpatterns = [
     path('signup/',views.userRegistration,name="signup"),
     path('login/',views.login_view,name="signin"),
     path('logout/',views.logout,name="signout"),
-    path('deletestd/<int:pk>',views.deletestd,name='deletestd')
+    path('deletestd/<int:pk>',views.deletestd,name='deletestd'),
+    path('media/',views.createPerson,name='media')
 ]
                                                  
