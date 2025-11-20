@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            color: aliceblue;
+            background-color: rgb(15, 136, 216);
+            text-decoration: none;
+           float: right;
+        }
+        
+        
+        ul li {
+            float: left;
+            color: aliceblue;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            padding: 20px; ;
+        }
+        nav{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+         <!--navigation-->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Register Student">Register Student</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Student Data">Student Data</a></li>
+                    <li><a href="#Sign Up">Sign Up</a></li>
+                    <li><a href="#Sign In">Sign In</a></li>
+                </ul>
+
+            </nav>
+        </div>    
+    </header>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

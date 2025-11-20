@@ -1,0 +1,20 @@
+{ % extends 'MyApp/base.html %'}
+</head>
+<body>
+    {% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="firstname_name">FirstName</label>
+    <input type="text"name="fname"required><br>
+    <label for="lastname">lastname</label>
+    <input type="text"name="lname" required><br>
+    <label for="email">email</label>
+    <input type="email"name="email" required><br>
+    <label for="age">age</label>
+    <input type="number"name="age" required><br>
+    <label for="regNo">regNo</label>
+    <input type="text"name="regNo" required>
+    <button type="submit">submit</button>
+</form>
+</body>
+{% block content}
